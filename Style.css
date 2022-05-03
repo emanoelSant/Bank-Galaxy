@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    /*faz com que as coisas fiquem lado a lado*/
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00ff88;
+
+}
+
+.navbar .logogo {
+    margin-left: 40px;
+    width: 50px;
+}
+
+.navbar>ul {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navbar>ul>li {
+    font: normal 15pt times;
+    padding: 0px 20px;
+    color: #2b134b;
+}
+
+.navbar>ul>li>a {
+
+    text-decoration: none;
+}
+
+a:active {
+    color: #00ff88;
+}
+
+.right-login {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login>h1 {
+    color: #77ffc0;
+}
+
+.form {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    flex-direction: column;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000040;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.left-login>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text-field>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    outline: none;
+    box-sizing: border-box
+}
+
+.text-field>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.text-field>input> ::placeholder {
+    color: #f0ffff94;
+}
+
+.but-login {
+    width: 45%;
+    padding: 10px 0px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 10px 20px 70px -3px #00ff8052;
+}
+
+@media only screen and (max-width: 600px) {
+    .world {
+        flex-direction: column;
+    }
+
+    .right-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login>image {
+        width: 50vh;
+    }
+
+    .left-login {
+        width: 90%;
+    }
+}
+
+.meios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ggg {
+    width: 20px;
+    margin: 5px;
+}
